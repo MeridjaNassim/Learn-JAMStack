@@ -1,0 +1,83 @@
+.btn {
+    background : purple;
+    color : white;
+    font-family: Roboto;
+    outline : none;
+    border : none ;
+    padding :10px;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-left: 10%;
+    margin-bottom: 10%;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(128,0,128,0.23);
+}
+
+.posts-wrapper {
+    width: 100%;
+}
+
+.post-loader {
+    width: 33vw;
+    min-height: 10vh;
+}
+
+.loader {
+    width : 100%;
+}
+
+.posts-list {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+.post {
+    max-width: 30%;
+    margin : 20px;
+    padding : 30px;
+    border-radius: 20px;
+    background-color : #fafafa;
+    border : 2px solid rgba(128, 128, 128, 0.5);
+}
+
+.title-placeholder {
+    width : 30%;
+    height : 10px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    background-color: rgba(128, 128, 128, 0.1);
+}
+.body-placeholder {
+    width : 22vw;
+    height : 100px;
+    border-radius: 10px;
+    background-color: rgba(128, 128, 128, 0.1);
+}
+.post-user-placeholder {
+    width : 80px;
+    height : 80px;
+    margin-bottom:  1.45rem;
+    border-radius: 50%;
+    background-color: rgba(128, 128, 128, 0.1);
+}
+
+.fadeInOut {
+   
+    animation: fadeInOut 1s ease infinite alternate ;
+}
+
+.avatar {
+    border-radius: 50%;
+}
+.post-title {
+    font-family: Roboto , sans-serif;
+    font-weight: 400;
+}
+
+@keyframes fadeInOut {
+    from {
+        background-color: rgba(128, 128, 128, 0.1);
+    }to {
+        background-color: rgba(128, 128, 128, 0.2);
+    }
+}

@@ -1,0 +1,22 @@
+.profile-image{
+    width : 200px;
+    height : 200px;
+}
+.profile-wrapper {
+    font-family: Roboto,sans-serif;
+    text-align: center;
+}
+.profile-title {
+    color :rgba(102,51,153,0.5);
+}
+.profile-name {
+    font-size: 2rem;
+    font-weight: 600;
+    color :rgba(102,51,153,1);
+}
+
+.description {
+    font-size: 1.5rem;
+    letter-spacing: 8px;
+    opacity: 0.9;
+}

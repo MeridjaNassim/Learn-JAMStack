@@ -25,11 +25,11 @@ const Layout = ({ children }) => {
 
   return (
     <>
-      <Header siteTitle={data.site.siteMetadata.title} />
+      <Header siteTitle="Hybrid Web Apps using gatsby" />
       <div
         style={{
           margin: `0 auto`,
-          maxWidth: 960,
+          maxWidth : "90%",
           padding: `0 1.0875rem 1.45rem`,
         }}
       >
@@ -44,8 +44,34 @@ const Layout = ({ children }) => {
   )
 }
 
+const AppLayout = ({ children }) => {
+  
+  return (
+    <>
+      <Header siteTitle="Web App with Dynamic Routes" />
+      <div
+        style={{
+          margin: `0 auto`,
+          maxWidth : "90%",
+          minHeight :"100vh",
+          padding: `0 1.0875rem 1.45rem`,
+        }}
+      >
+        <main>{children}</main>
+        <footer>
+          © {new Date().getFullYear()}, Built with
+          {` `}
+          <a href="https://www.gatsbyjs.org">Gatsby</a>
+        </footer>
+      </div>
+    </>
+  )
+}
+
+
 Layout.propTypes = {
   children: PropTypes.node.isRequired,
 }
 
 export default Layout
+export {AppLayout}

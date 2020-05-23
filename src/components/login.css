@@ -1,0 +1,65 @@
+.wrapper {
+    width : 100%;
+    font-family: Roboto,sans-serif;
+}
+.login-form {
+    width :50%;
+    margin : 0 auto;
+    padding : 64px;
+    margin-bottom: 100px;
+   box-shadow: 0 10px 20px rgba(102,51,153,0.19), 0 6px 6px rgba(102,51,153,0.23);
+   
+}
+
+.form-group {
+display: block;
+margin : 20px auto;
+text-align: center;
+
+}
+.title {
+    color : rgba(102,51,153,0.8);
+    font-weight: Roboto;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+.input {
+    width: 50%;
+
+display: block;
+margin : 0 auto;
+text-align:  center;
+margin-bottom: 10px;
+color : rgba(102,51,153,0.8);
+margin-top: 10px;
+padding :8px 40px;
+border-radius: 8px;
+    border: 2px solid rgba(102,51,153,0.5);
+    outline:  rgba(102,51,153,0.5) thin;
+}
+
+.submit {
+    
+    background-color: transparent;
+    border: 2px solid rgba(102,51,153,0.5);
+    border-radius: 8px;
+    padding :8px 40px;
+    margin : 30px 25%;
+    width: 50%;
+    cursor: pointer;
+    background-color: rgba(102,51,153,1);
+    color : white;
+    box-shadow: 0 10px 20px rgba(102,51,153,0.19), 0 6px 6px rgba(102,51,153,0.23);
+}
+@media screen and (max-width: 768px) {
+    .login-form {
+        width : 90%;
+    }
+    .input {
+        width : 100%
+    }
+    .submit {
+        width : 100%;
+        margin : 30px 0px;
+    }
+}
